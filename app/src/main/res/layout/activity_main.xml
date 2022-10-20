@@ -9,44 +9,58 @@
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+    >
         <ImageView
-                android:layout_width="83dp"
-                android:layout_height="87dp"
-                app:srcCompat="@drawable/edf"
-                android:id="@+id/imageView2"
-                android:layout_margin="10px"
-        />
-
-        <TextView
-                android:id="@+id/main_textview_greeting"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:padding="12dp"
-                android:textSize="56px"
-                android:textAlignment="center"
-                android:text="EDF"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/logo_edf"
+                android:id="@+id/imageView2"
+                android:layout_margin="30px"
+
         />
 
-    </LinearLayout>
+</LinearLayout>
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+    >
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="20dp"
-        >
+                android:layout_weight="1">
             <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/card"
+                    android:id="@+id/imageIdentification"
+            />
+            <TextView
+                    android:id="@+id/main_textview_identification"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/client"
+                    android:textSize="48px"
+                    android:textAlignment="center"
+                    android:text="Identification"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/group"
+                    android:layout_gravity="center"
                     android:id="@+id/imageclient"/>
             <TextView
                     android:id="@+id/main_textview_client"
@@ -54,32 +68,60 @@
                     android:layout_height="wrap_content"
                     android:textSize="48px"
                     android:textAlignment="center"
-                    android:text="Client"
+                    android:text="ReleveCompteur"
         />
         </LinearLayout>
-        <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_margin="20dp"
-        >
-                <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/identification"
-                        android:id="@+id/imageIdentification"
-                />
-                <TextView
-                        android:id="@+id/main_textview_identification"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="48px"
-                        android:textAlignment="center"
-                        android:text="Identification"
-        />
-        </LinearLayout>
+
     </LinearLayout>
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+    >
 
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/download"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageimport"/>
+            <TextView
+                    android:id="@+id/main_textview_import"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="48px"
+                    android:textAlignment="center"
+                    android:text="ImportDonnes"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/save"
+                    android:id="@+id/imageSave"
+            />
+            <TextView
+                    android:id="@+id/main_textview_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="48px"
+                    android:textAlignment="center"
+                    android:text="Sauvegardes"
+            />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
