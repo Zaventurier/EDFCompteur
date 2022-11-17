@@ -1,7 +1,8 @@
 package com.equipe3.compteur.model;
 
 
-public class ReleveCompteur {
+public class
+ReleveCompteur {
     private int idReleveCompteur;
     private double releveCompteur;
     private String dateReleveCompteur;
