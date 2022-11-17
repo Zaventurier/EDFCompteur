@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EDFCompteur</string>
+    <string name="add_word">Ajouter un compteur</string>
+    <string name="title">id</string>
+    <string name="secondary_text">nomclient</string>
+    <string name="supporting_text">prenomclient</string>
+    <string name="action_1">Ajouter compteur</string>
+    <string name="action_2">Relever compteur</string>
+
 </resources>
