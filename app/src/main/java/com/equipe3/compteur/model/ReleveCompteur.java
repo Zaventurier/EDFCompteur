@@ -1,11 +1,24 @@
 package com.equipe3.compteur.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity(tableName = "relevecompteur")
 public class ReleveCompteur {
+    @PrimaryKey(autoGenerate = true)
+    @NonNull
+
+    @ColumnInfo(name = "idReleveCompteur")
     private int idReleveCompteur;
+    @ColumnInfo(name = "releveCompteur")
     private double releveCompteur;
+    @ColumnInfo(name = "dateReleveCompteur")
     private String dateReleveCompteur;
+    @ColumnInfo(name = "situationReleve")
     private int situationReleve;
+    @ColumnInfo(name = "idCompteurClient")
     private int idCompteurClient;
 
     /*Getteurs*/

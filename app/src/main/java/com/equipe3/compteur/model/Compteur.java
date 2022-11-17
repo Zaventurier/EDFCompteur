@@ -1,8 +1,18 @@
 package com.equipe3.compteur.model;
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "compteur")
+
 public class Compteur {
+    @PrimaryKey(autoGenerate = true)
+    @NonNull
+
+    @ColumnInfo(name = "idCompteur")
     private int idCompteur;
+    @ColumnInfo(name = "idClientCompteur")
     private int idClientCompteur;
 
     /*Getteurs*/

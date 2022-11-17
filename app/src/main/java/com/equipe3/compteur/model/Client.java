@@ -10,10 +10,15 @@ public class Client {
 @NonNull
 @ColumnInfo(name = "identifiantClient")
     private int identifiantClient;
+@ColumnInfo(name = "nomClient")
     private String nomClient;
+@ColumnInfo(name = "prenomClient")
     private String prenomClient;
+@ColumnInfo(name = "adresseClient")
     private String adresseClient;
+    @ColumnInfo(name = "codePostalClient")
     private String codePostalClient;
+    @ColumnInfo(name = "villeClient")
     private String villeClient;
 
     /*Getteur*/
