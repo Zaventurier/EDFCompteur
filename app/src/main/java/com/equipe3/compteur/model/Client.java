@@ -1,6 +1,14 @@
 package com.equipe3.compteur.model;
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity(tableName = "client")
 public class Client {
+@PrimaryKey(autoGenerate = true)
+@NonNull
+@ColumnInfo(name = "identifiantClient")
     private int identifiantClient;
     private String nomClient;
     private String prenomClient;
