@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 @Database(entities = {Client.class}, version = 1, exportSchema = false)
 public abstract class Clientdatabase extends RoomDatabase {
 
-    public abstract Clientdao clientdao();
+    public abstract IClientDao clientdao();
 
     private static volatile Clientdatabase INSTANCE;
     private static final int NUMBER_OF_TREADS = 4;
