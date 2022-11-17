@@ -6,6 +6,7 @@ public class ReleveCompteur {
     private double releveCompteur;
     private String dateReleveCompteur;
     private int situationReleve;
+    private int idCompteurClient;
 
     /*Getteurs*/
     public int getIdReleveCompteur(){
@@ -20,6 +21,7 @@ public class ReleveCompteur {
     public int getSituationReleve(){
         return this.situationReleve;
     }
+    public int getIdCompteurClient(){return this.idCompteurClient;}
 
     /*Setteurs*/
     public void setIdReleveCompteur(int idReleveCompteur){
@@ -34,6 +36,18 @@ public class ReleveCompteur {
     public void setSituationReleve(int situationReleve){
         this.situationReleve = situationReleve;
     }
+    public void setIdCompteurClient(int idCompteurClient){this.idCompteurClient = idCompteurClient;}
 
+    /*Constructeurs*/
+    /*Constructeur par défaut*/
+    public ReleveCompteur(){
 
+    }
+    public ReleveCompteur(int idReleveCompteur, double releveCompteur, String dateReleveCompteur, int situationReleve, int idCompteurClient){
+        this.idReleveCompteur = idReleveCompteur;
+        this.releveCompteur = releveCompteur;
+        this.dateReleveCompteur = dateReleveCompteur;
+        this.situationReleve = situationReleve;
+        this.idCompteurClient = idCompteurClient;
+    }
 }
