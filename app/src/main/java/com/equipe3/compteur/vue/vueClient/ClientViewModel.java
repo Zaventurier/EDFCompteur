@@ -1,4 +1,4 @@
-package com.equipe3.compteur.vue;
+package com.equipe3.compteur.vue.vueClient;
 
 import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
@@ -22,6 +22,10 @@ public class ClientViewModel extends AndroidViewModel {
     public void insert(Client client) {
         mClient.insert(client);
     }
-    public void update(Client client) { mClient.update(client);}
-    public void delete(Client client) { mClient.delete(client);}
+    public void update(Client client) {
+        mClient.update(client);
+    }
+    public void delete(Client client) {
+        mClient.delete(client);
+    }
 }
