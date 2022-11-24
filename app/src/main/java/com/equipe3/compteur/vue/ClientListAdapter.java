@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
-import com.equipe3.compteur.model.Client;
 
 public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
     public ClientListAdapter(@NonNull DiffUtil.ItemCallback<Client> diffCallback) {

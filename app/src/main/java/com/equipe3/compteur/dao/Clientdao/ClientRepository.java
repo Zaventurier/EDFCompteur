@@ -3,7 +3,6 @@ package com.equipe3.compteur.dao.Clientdao;
 import android.app.Application;
 import androidx.lifecycle.LiveData;
 import com.equipe3.compteur.dao.EDFdatabase;
-import com.equipe3.compteur.model.Client;
 
 import java.util.List;
 

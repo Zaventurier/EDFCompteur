@@ -3,7 +3,6 @@ package com.equipe3.compteur.dao.Clientdao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.*;
-import com.equipe3.compteur.model.Client;
 
 import java.util.List;
 

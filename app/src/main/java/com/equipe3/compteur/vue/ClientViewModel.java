@@ -4,7 +4,7 @@ import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import com.equipe3.compteur.dao.Clientdao.ClientRepository;
-import com.equipe3.compteur.model.Client;
+
 import java.util.List;
 
 public class ClientViewModel extends AndroidViewModel {
