@@ -1,6 +1,9 @@
 package com.equipe3.compteur.controler;
 
+import android.app.Application;
+import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+import com.equipe3.compteur.dao.ClientRepository;
 import com.equipe3.compteur.model.Client;
 import java.util.List;
 
