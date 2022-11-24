@@ -1,4 +1,4 @@
-package com.equipe3.compteur.dao;
+package com.equipe3.compteur.dao.Clientdao;
 
 
 import androidx.lifecycle.LiveData;

@@ -1,4 +1,4 @@
-package com.equipe3.compteur.controler;
+package com.equipe3.compteur.vue;
 
 /*RecyclerWiew*/
 

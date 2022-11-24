@@ -1,4 +1,4 @@
-package com.equipe3.compteur.controler;
+package com.equipe3.compteur.vue;
 
 import android.content.Intent;
 import android.view.View;

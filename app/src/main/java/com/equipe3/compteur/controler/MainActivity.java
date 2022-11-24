@@ -1,7 +1,8 @@
-package com.equipe3.compteur;
+package com.equipe3.compteur.controler;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.equipe3.compteur.R;
 
 public class MainActivity extends AppCompatActivity {
 

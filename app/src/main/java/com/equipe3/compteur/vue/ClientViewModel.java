@@ -1,9 +1,9 @@
-package com.equipe3.compteur.controler;
+package com.equipe3.compteur.vue;
 
 import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import com.equipe3.compteur.dao.ClientRepository;
+import com.equipe3.compteur.dao.Clientdao.ClientRepository;
 import com.equipe3.compteur.model.Client;
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class ClientViewModel extends AndroidViewModel {
     public ClientViewModel(Application application) {
         super(application);
         this.mClient = new ClientRepository(application);
-        this.mAllClients = mClient.getAllClients();
+        this.mAllClients = mClient.getmAllClients();
     }
     public LiveData<List<Client>> getmAllClients() {
         return mAllClients;

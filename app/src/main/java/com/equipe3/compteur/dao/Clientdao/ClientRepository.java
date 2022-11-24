@@ -1,7 +1,8 @@
-package com.equipe3.compteur.dao;
+package com.equipe3.compteur.dao.Clientdao;
 
 import android.app.Application;
 import androidx.lifecycle.LiveData;
+import com.equipe3.compteur.dao.EDFdatabase;
 import com.equipe3.compteur.model.Client;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public class ClientRepository {
     private LiveData<List<Client>> mAllClients;
 
     public ClientRepository(Application application){
-        Clientdatabase db = Clientdatabase.getDatabase(application);
+        EDFdatabase db = EDFdatabase.getDatabase(application);
         mClientDao = db.clientdao();
     }
 
@@ -21,19 +22,19 @@ public class ClientRepository {
     }
 
     public void insert (Client client){
-        Clientdatabase.databaseWriteExecutor.execute(() ->{
+        EDFdatabase.databaseWriteExecutor.execute(() ->{
             mClientDao.insert(client);
         });
     }
 
     public void update(Client client){
-        Clientdatabase.databaseWriteExecutor.execute(() ->{
+        EDFdatabase.databaseWriteExecutor.execute(() ->{
             mClientDao.update(client);
         });
     }
 
     public void delete(Client client){
-        Clientdatabase.databaseWriteExecutor.execute(() ->{
+        EDFdatabase.databaseWriteExecutor.execute(() ->{
             mClientDao.delete(client);
         });
     }
