@@ -22,7 +22,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title"
-                    android:textAppearance="?attr/textAppearanceTitleMedium"/>
+                    />
+                    <!---android:textAppearance="?attr/textAppearanceTitleMedium" -->
 
             <TextView
                     android:id="@+id/hint_nom_client_card"
@@ -30,8 +31,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/secondary_text"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
                     android:textColor="?android:attr/textColorSecondary"/>
+                    <!--- android:textAppearance="?attr/textAppearanceBodyMedium" -->
 
             <TextView
                     android:id="@+id/hint_prenom_client_card"
@@ -39,8 +40,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:text="@string/supporting_text"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
                     android:textColor="?android:attr/textColorSecondary"/>
+                    <!--- android:textAppearance="?attr/textAppearanceBodyMedium" -->
 
         </LinearLayout>
 
