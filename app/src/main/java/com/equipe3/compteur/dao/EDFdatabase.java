@@ -15,8 +15,7 @@ import com.equipe3.compteur.model.Compteur;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Client.class}, version = 1, exportSchema = false)
-@Database(entities = {Compteur.class}, version = 1, exportSchema = false)
+@Database(entities = {Client.class, Compteur.class}, version = 1, exportSchema = false)
 
 public abstract class EDFdatabase extends RoomDatabase {
 

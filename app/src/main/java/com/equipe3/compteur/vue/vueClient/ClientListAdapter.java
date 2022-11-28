@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
+import com.equipe3.compteur.controler.UpdateClient;
 import com.equipe3.compteur.model.Client;
 import org.jetbrains.annotations.NotNull;
 
@@ -33,7 +34,7 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder >{
             @Override
             public void onClick(View v) {
                 /*UpdateClient est une méthode/class manquante*/
-                Intent UpdateClient = new Intent(v.getContext(), UpdateClient.class);
+                Intent UpdateClient = new Intent(v.getContext(), com.equipe3.compteur.controler.UpdateClient.class);
                 UpdateClient.putExtra("idClient", current.getIdentifiantClient());
                 UpdateClient.putExtra("nomClient", current.getNomClient());
                 UpdateClient.putExtra("prenomClient", current.getPrenomClient());

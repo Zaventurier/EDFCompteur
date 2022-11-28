@@ -14,8 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.equipe3.compteur.R;
 import com.equipe3.compteur.dao.EDFdatabase;
 import com.equipe3.compteur.model.Client;
-import com.equipe3.compteur.vue.ClientListAdapter;
-import com.equipe3.compteur.vue.ClientViewModel;
+
+import com.equipe3.compteur.vue.vueClient.ClientListAdapter;
+import com.equipe3.compteur.vue.vueClient.ClientViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ReleveCompteur extends AppCompatActivity {
@@ -48,9 +49,13 @@ public class ReleveCompteur extends AppCompatActivity {
                             if (result.getResultCode() == RESULT_OK) {
                                 assert result.getData() != null;
                                 Client client = new Client(
-                                        result.getData().getStringExtra(NewClient.EXTRA_REPLY_IDCLIENT),
+                                        result.getData().getIntExtra("EXTRA_REPLY_IDCLIENT",NewClient.EXTRA_REPLY_IDCLIENT),
                                         result.getData().getStringExtra(NewClient.EXTRA_REPLY_NOMCLIENT),
-                                        result.getData().getStringExtra(NewClient.EXTRA_REPLY_PRENOMCLIENT));
+                                        result.getData().getStringExtra(NewClient.EXTRA_REPLY_PRENOMCLIENT),
+                                        result.getData().getStringExtra(NewClient.EXTRA_REPLY_ADRESSECLIENT),
+                                        result.getData().getStringExtra(NewClient.EXTRA_REPLY_CODEPOSTALCLIENT),
+                                        result.getData().getStringExtra(NewClient.EXTRA_REPLY_VILLECLIENT));
+
                                 EDFdatabase.databaseWriteExecutor.execute(() -> mClientViewModel.insert(client));
                                 clientInsere();
 

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.equipe3.compteur.R;
+import com.equipe3.compteur.controler.AddCompteurActivity;
 import com.google.android.material.button.MaterialButton;
 
 public class ClientViewHolder extends RecyclerView.ViewHolder {
