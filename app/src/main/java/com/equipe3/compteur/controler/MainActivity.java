@@ -1,5 +1,7 @@
 package com.equipe3.compteur.controler;
 
+import android.content.Intent;
+import android.view.View;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
         mReleveCompteurLinear = findViewById(R.id.mReleveCompteurLinear);
         mImportDonnesLinear = findViewById(R.id.mImportDonnesLinear);
         mSauvegardesLinear = findViewById(R.id.mSauvegardesLinear);
+
+
+        mReleveCompteurLinear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent releveCompteurActivityIntent = new Intent(MainActivity.this, ReleveCompteur.class);
+            }
+        });
 
 
 
