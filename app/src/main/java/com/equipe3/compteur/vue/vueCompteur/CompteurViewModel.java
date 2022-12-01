@@ -1,10 +1,10 @@
-package com.equipe3.compteur.vue.vueClient;
+package com.equipe3.compteur.vue.vueCompteur;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import com.equipe3.compteur.dao.Clientdao.ClientRepository;
+import com.equipe3.compteur.dao.Compteurdao.CompteurRepository;
 import com.equipe3.compteur.model.Compteur;
 import org.jetbrains.annotations.NotNull;
 
@@ -16,12 +16,12 @@ public class CompteurViewModel extends AndroidViewModel {
     public CompteurViewModel(Application application) {
         super(application);
         this.mCompteur = new CompteurRepository(application);
-        this.mAllCompteur = mCompteur.
-    ();
+        this.mAllCompteur = mCompteur.getmAllClients();
     }
 
-    public CompteurViewModel(@NonNull @NotNull Application application) {
+    public CompteurViewModel(@NonNull @NotNull Application application, LiveData<List<Compteur>> mAllCompteur) {
         super(application);
+        this.mAllCompteur = mAllCompteur;
     }
 
     public LiveData<List<Compteur>> getmAllCompteur() {
