@@ -24,6 +24,8 @@ public class ClientRepository {
     public void insert (Client client){
         EDFdatabase.databaseWriteExecutor.execute(() ->{
             mClientDao.insert(client);
+
+
         });
     }
 
