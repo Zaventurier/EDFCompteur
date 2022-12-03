@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 
 public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder >{
-    protected ClientListAdapter(@NonNull @NotNull DiffUtil.ItemCallback<Client> diffCallback) {
+    public ClientListAdapter(@NonNull @NotNull DiffUtil.ItemCallback<Client> diffCallback) {
         super(diffCallback);
     }
 
@@ -33,11 +33,15 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder >{
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*UpdateClient est une méthode/class manquante*/
                 Intent UpdateClient = new Intent(v.getContext(), com.equipe3.compteur.controler.UpdateClient.class);
                 UpdateClient.putExtra("idClient", current.getIdentifiantClient());
                 UpdateClient.putExtra("nomClient", current.getNomClient());
                 UpdateClient.putExtra("prenomClient", current.getPrenomClient());
+                UpdateClient.putExtra("adresseClient", current.getAdresseClient());
+                UpdateClient.putExtra("codePostalClient", current.getCodePostalClient());
+                UpdateClient.putExtra("villeClient", current.getVilleClient());
+
+
                 v.getContext().startActivity(UpdateClient);
             }
         });

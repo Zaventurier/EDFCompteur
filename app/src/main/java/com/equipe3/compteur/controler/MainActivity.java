@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent releveCompteurActivityIntent = new Intent(MainActivity.this, ReleveCompteur.class);
+                startActivity(releveCompteurActivityIntent);
             }
         });
 

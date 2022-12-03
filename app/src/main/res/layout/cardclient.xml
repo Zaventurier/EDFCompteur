@@ -9,7 +9,9 @@
             android:id="@+id/id_client_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/list"
+    >
         <!--Media -->
         <LinearLayout
                 android:layout_width="match_parent"
@@ -26,7 +28,7 @@
                     <!---android:textAppearance="?attr/textAppearanceTitleMedium" -->
 
             <TextView
-                    android:id="@+id/hint_nom_client_card"
+                    android:id="@+id/id_nom_client_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -35,7 +37,7 @@
                     <!--- android:textAppearance="?attr/textAppearanceBodyMedium" -->
 
             <TextView
-                    android:id="@+id/hint_prenom_client_card"
+                    android:id="@+id/id_prenom_client_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -55,17 +57,24 @@
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/ajouterCompteur"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:clickable="true"
                     android:layout_marginEnd="8dp"
                     android:text="@string/action_1"
-                    style="?attr/borderlessButtonStyle"/>
+                    style="?attr/borderlessButtonStyle"
+                    android:textColor="#fff"
+                    android:backgroundTint="#0f397c"
+            />
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/releverCompteur"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:clickable="true"
+                    android:layout_marginTop="-8.55dp"
                     android:text="@string/action_2"
-                    style="?attr/borderlessButtonStyle"/>
+                    style="?attr/borderlessButtonStyle"
+                    android:textColor="#fff"
+                    android:backgroundTint="#f04415"
+            />
         </LinearLayout>
 </LinearLayout></com.google.android.material.card.MaterialCardView>

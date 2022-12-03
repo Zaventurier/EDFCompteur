@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+    >
+
+        <LinearLayout
+                android:id="@+id/id_profil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:id="@+id/id_picture_profil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/textlines"
+                    android:paddingBottom="10dp"
+            >
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_contacts_24"
+                        android:id="@+id/imageView"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radiusround"
+                        android:padding="20dp"
+                />
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Client :"
+                          android:gravity="center"
+                          android:textSize="26dp"
+                          android:padding="5dp"
+                          android:textStyle="bold"
+                          android:textColor="?android:attr/colorForeground"
+                          />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/id_info_profil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+            >
+
+                <!-- Id -->
+                <!--
+                <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="ID : "
+                          android:gravity="center"
+                          android:textSize="20dp"
+                          android:padding="15dp"
+                />
+
+                <EditText
+                        android:id="@+id/edittext_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/profil_list"
+                />
+                -->
+
+                <!-- Nom -->
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nom :"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="15dp"
+                />
+
+                <EditText
+                        android:id="@+id/edittext_nom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/profil_list"
+                />
+
+                <!-- Prenom -->
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prenom :"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="15dp"
+                />
+
+                <EditText
+                        android:id="@+id/edittext_prenom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/profil_list"
+                />
+
+                <!-- Adresse -->
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adresse :"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="15dp"
+                />
+
+                <EditText
+                        android:id="@+id/edittext_adresse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/profil_list"
+                />
+
+                <!-- code postal -->
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Code postal :"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="15dp"
+                />
+
+                <EditText
+                        android:id="@+id/edittext_codepostal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/profil_list"
+                />
+
+                <!-- Ville -->
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ville :"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:padding="15dp"
+                />
+
+                <EditText
+                        android:id="@+id/edittext_ville"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:layout_marginBottom="40dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/profil_list"
+                />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>

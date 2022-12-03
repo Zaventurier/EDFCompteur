@@ -10,7 +10,6 @@ import java.util.List;
 public class ClientRepository {
     private IClientDao mClientDao;
     private LiveData<List<Client>> mAllClients;
-
     public ClientRepository(Application application){
         EDFdatabase db = EDFdatabase.getDatabase(application);
         mClientDao = db.clientdao();

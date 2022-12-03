@@ -20,9 +20,9 @@ public class ClientViewHolder extends RecyclerView.ViewHolder {
     public ClientViewHolder(View itemView) {
         super(itemView);
         this.clientItemViewId = itemView.findViewById(R.id.id_client_card);
-        this.clientItemViewNom = itemView.findViewById(R.id.hint_nom_client_card);
+        this.clientItemViewNom = itemView.findViewById(R.id.id_nom_client_card);
         this.clientItemViewPrenom =
-                itemView.findViewById(R.id.hint_prenom_client_card);
+                itemView.findViewById(R.id.id_prenom_client_card);
         this.compteurClientCard = itemView.findViewById(R.id.ajouterCompteur);
     }
     public void bind(String textIdClient, String textNomClient, String

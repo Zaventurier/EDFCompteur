@@ -11,7 +11,6 @@ import java.util.List;
 @Dao
 public interface IClientDao {
 
-
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insert(Client client);
 
