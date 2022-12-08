@@ -16,7 +16,7 @@ public class CompteurListAdapter extends ListAdapter<Client, ClientViewHolder>{
     protected CompteurListAdapter(@NonNull @NotNull DiffUtil.ItemCallback<Client> diffCallback) {
         super(diffCallback);
     }
-/*
+
     @NotNull
     @Override
     public ClientViewHolder onCreateViewHolder(@NotNull ViewGroup parent, int viewType) {
@@ -34,7 +34,7 @@ public class CompteurListAdapter extends ListAdapter<Client, ClientViewHolder>{
             @Override
             public void onClick(View v) {
                 //UpdateClient est une méthode/class manquante*/
-                /*Intent UpdateClient = new Intent(v.getContext(), com.equipe3.compteur.controler.UpdateClient.class);
+                Intent UpdateClient = new Intent(v.getContext(), com.equipe3.compteur.controler.UpdateClient.class);
                 UpdateClient.putExtra("idClient", current.getIdentifiantClient());
                 UpdateClient.putExtra("nomClient", current.getNomClient());
                 UpdateClient.putExtra("prenomClient", current.getPrenomClient());
@@ -54,5 +54,5 @@ public class CompteurListAdapter extends ListAdapter<Client, ClientViewHolder>{
         public boolean areContentsTheSame(@NonNull Client oldItem, @NonNull Client newItem) {
             return Objects.equals(oldItem.getIdentifiantClient(), newItem.getIdentifiantClient());
         }
-    }*/
+    }
 }
