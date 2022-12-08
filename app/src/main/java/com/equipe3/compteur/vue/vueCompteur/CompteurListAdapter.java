@@ -7,7 +7,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import com.equipe3.compteur.model.Client;
-import com.equipe3.compteur.model.Compteur;
 import com.equipe3.compteur.vue.vueClient.ClientViewHolder;
 import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
@@ -26,7 +25,7 @@ public class CompteurListAdapter extends ListAdapter<Client, ClientViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ClientViewHolder holder, int position) {
-        Compteur current = getItem(position);
+        Client current = getItem(position);
 
         holder.bind(String.valueOf(current.getIdentifiantClient()), current.getNomClient(), current.getPrenomClient());
 
