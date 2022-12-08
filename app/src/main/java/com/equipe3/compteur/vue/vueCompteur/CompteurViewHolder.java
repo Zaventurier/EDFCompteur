@@ -14,7 +14,7 @@ public class CompteurViewHolder extends RecyclerView.ViewHolder {
     private final TextView clientItemViewId;
     private final TextView clientItemViewNom;
     private final TextView clientItemViewPrenom;
-    private final MaterialButton compteurClientCard;*/
+    private final MaterialButton compteurClientCard;
     public CompteurViewHolder(View itemView) {
         super(itemView);
         this.clientItemViewId = itemView.findViewById(R.id.id_client_card);
