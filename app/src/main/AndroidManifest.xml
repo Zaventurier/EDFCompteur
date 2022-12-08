@@ -23,13 +23,19 @@
         </activity>
 
         <activity
-                android:name=".controler.ReleveCompteur"/>
+                android:name=".controler.ReleveCompteur"
+                android:exported="false"
+        />
 
         <activity
-                android:name=".controler.NewClient"/>
+                android:name=".controler.NewClient"
+                android:exported="false"
+        />
 
         <activity
-                android:name=".controler.UpdateClient"/>
+                android:name=".controler.UpdateClient"
+                android:exported="false"
+        />
     </application>
 
 </manifest>
